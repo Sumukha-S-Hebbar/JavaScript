@@ -36,3 +36,26 @@ let person = {
 
 console.log(typeof undefined); // "undefined"
 console.log(typeof null); // "object" (this is a known quirk in JavaScript) this is fun remember this 
+
+let bignumber = BigInt(1234567890123456789012345678901234567890);
+
+console.log(typeof bignumber); // "bigint"
+
+let anotherbignumber = 12497024380180481094810n;
+console.log(typeof anotherbignumber); // "bigint"
+
+// 1) Primitive Datatypes
+//        Number => number
+//        String  => string
+//        Boolean  => boolean
+//        null  => object
+//        undefined  =>  undefined
+//        Symbol  =>  symbol
+//        BigInt  =>  bigint
+
+// 2) Non-primitive Datatypes
+//        Arrays  =>  object
+//        Function  =>  function
+//        Object  =>  object
+
+//the primitive datatypes get stored in stack memory and the non-primitive datatypes get stored in heap memory that means that the primitive datatypes use pass by value and the non-primitive datatypes use pass by referencee
