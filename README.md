@@ -1,2 +1,1 @@
-# js
-practising js
+# JavaScript
