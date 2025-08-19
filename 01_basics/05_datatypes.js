@@ -47,7 +47,7 @@ let person = {
 let favoriteFruits = ["apple", "banana", "orange"];
 //9. Array: An array is an ordered, integer-indexed, collection of values.
 
-function functionName(parameter1, parameter2, ...) {
+function functionName(parameter1, parameter2,) {
   // code to be executed
   return value; // optional
 }
