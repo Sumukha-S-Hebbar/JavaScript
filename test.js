@@ -1,2 +1,4 @@
-console.log(typeof(+"3"))
-console.log("1"+2+3)
+const colors = ['red', 'green', 'blue'];
+
+// Accessing the last element using a negative index
+console.log(colors[-1]); // 'blue'

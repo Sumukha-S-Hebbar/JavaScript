@@ -9,3 +9,6 @@ console.log(`hello ${stringone} ${stringtwo}`);
 //by using back ticks we can do string interpolation use this for string concatenation
 
 //learn more about string methods and properties and prototypes
+
+//string methods
+"cat".charAt(1); // gives value "a"
