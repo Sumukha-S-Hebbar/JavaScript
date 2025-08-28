@@ -1,4 +1,4 @@
-const colors = ['red', 'green', 'blue'];
+let myNumber = 42;
 
-// Accessing the last element using a negative index
-console.log(colors[-1]); // 'blue'
+// This will output 'ƒ Number() { [native code] }'
+console.log(myNumber.constructor);
