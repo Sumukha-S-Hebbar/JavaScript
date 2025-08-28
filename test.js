@@ -1,4 +1,11 @@
-let myNumber = 42;
+const user = { name: 'Alice', age: 25 };
+const info = { email: 'alice@example.com', country: 'USA' };
+const merged = Object.assign(user, info);
 
-// This will output 'ƒ Number() { [native code] }'
-console.log(myNumber.constructor);
+console.log(merged);
+// Output: { name: 'Alice', age: 25, email: 'alice@example.com', country: 'USA' }
+
+// The original 'user' object is also modified
+console.log(user.name);
+// Output: { name: 'Alice', age: 25, email: 'alice@example.com', country: 'USA' }
+
