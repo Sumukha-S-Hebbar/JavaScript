@@ -47,3 +47,29 @@ Object.values(obj_name)
 Object.entires(obj_name)
 
 .hasOwnProperty(Property_name)
+
+// *****************destructuring of objects*****************************
+//this is used to reduce the code like if 
+const person = {
+id: 1,
+details: {
+firstName: 'Jane',
+lastName: 'Doe'
+}
+};
+//const { details: { firstName, lastName } } = person;
+console.log(firstName); // 'Jane'
+console.log(lastName); // 'Doe'
+console.log(person.details.lastName); // 'Doe'
+
+//in the above example instead of writing person.details.firstname i can simply use firstname
+
+//but i had a doubt here as to why cant i just log details and it gives me an object which has full name and last name 
+//it doesnt work that way i explicitly need to do that if i need only till details
+
+const { details, details: { firstName, lastName } } = person;
+
+//you can also change thier name like in the one below
+
+
+const { details, details: { firstName :fn, lastName:ln } } = person;

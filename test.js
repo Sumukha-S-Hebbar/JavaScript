@@ -1,11 +1,13 @@
-const user = { name: 'Alice', age: 25 };
-const info = { email: 'alice@example.com', country: 'USA' };
-const merged = Object.assign(user, info);
+const counter = function () {
+  let count = 0; // 'count' is a variable in the outer function's scope
 
-console.log(merged);
-// Output: { name: 'Alice', age: 25, email: 'alice@example.com', country: 'USA' }
-
-// The original 'user' object is also modified
-console.log(user.name);
-// Output: { name: 'Alice', age: 25, email: 'alice@example.com', country: 'USA' }
-
+  // The inner function 'increment' is a closure
+  // It has access to 'count' even after createCounter() finishes
+  return function increment() {
+    count = count + 1;
+    return count;
+  };
+}; // createCounter() runs and returns the 'increment' function
+console.log(counter()()); // Output: 1
+console.log(counter()); // Output: 2
+console.log(counter()); // Output: 3
