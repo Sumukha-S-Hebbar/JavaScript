@@ -20,8 +20,6 @@ document.getElementById().getAttribute()
 //TextContent will display all the content inisde except tags 
 //queryselector
 //queryselector all
-
-
-
-
-
+//.children to get children elements
+//.parentElement to get the parent of a child
+//.nextElementSibling to get the sibling element
